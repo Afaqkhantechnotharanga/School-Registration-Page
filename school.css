@@ -1,0 +1,135 @@
+.body{
+    outline-style: solid;
+    color: mediumseagreen;
+    flex-wrap: wrap;
+}
+.heading{
+    text-align: center;
+    color: blue;
+    background-color: aqua;
+    margin-right: 1%;
+    margin-left: 1%;
+    outline-style: solid;
+    margin-top: 1%;
+}
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.uploadbutton {
+    margin-top: 2%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.uploadbutton:hover {
+    background-color: darkblue;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px; /* Gap between rows and columns */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 400px;
+	outline: 0;
+	background-color: silver;
+  border-bottom: 2px solid black;
+}
+.form-row-academic {
+    display: flex;
+}
+.form-row-academic input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 400px;
+	outline: 0;
+	background-color: silver;
+  border-bottom: 2px solid black;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(26px);
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  .register-button {
+    background-color: blue; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
